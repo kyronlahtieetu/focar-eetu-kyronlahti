@@ -33,7 +33,7 @@ def eteenpain(nopeus = 49181, aika = 4):
     sleep(aika) 
     e1.duty_u16(0)
     e2.duty_u16(0)
-    sleep(1)
+    
 
 def taaksepain(nopeus = 49181, aika = 4):
     m1.value(0)
@@ -43,27 +43,27 @@ def taaksepain(nopeus = 49181, aika = 4):
     sleep(aika) 
     e1.duty_u16(0)
     e2.duty_u16(0)
-    sleep(1)
     
-def vasemmalle(nopeus = 49181, aika = 3):
+    
+def vasemmalle(nopeus = 60000, nopeus2 = 16200, aika = 2):
     m1.value(1)
-    m2.value(0)
-    e1.duty_u16(nopeus)
-    e2.duty_u16(nopeus)
-    sleep(aika) 
-    e1.duty_u16(0)
-    e2.duty_u16(0)
-    sleep(1)
-
-def oikealle(nopeus = 49181, aika = 3):
-    m1.value(0)
     m2.value(1)
     e1.duty_u16(nopeus)
+    e2.duty_u16(nopeus2)
+    sleep(aika) 
+    e1.duty_u16(0)
+    e2.duty_u16(0)
+    
+
+def oikealle(nopeus = 60000, nopeus2 = 16200, aika = 2):
+    m1.value(1)
+    m2.value(1)
+    e1.duty_u16(nopeus2)
     e2.duty_u16(nopeus)
     sleep(aika) 
     e1.duty_u16(0)
     e2.duty_u16(0)
-    sleep(1)
+    
 
 def ledpaalle(aika = 1):
     led.on()
