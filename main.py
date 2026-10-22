@@ -1,23 +1,32 @@
 # Lisätään focar.py tiedosto
 import focar
 
-# Neljän sekunnin tauko ennen liikkumista
-focar.sleep(4)
+# Kahden sekunnin tauko ennen liikkumista
+focar.sleep(2)
 
-# Liiku eteenpain metri
-focar.eteenpain(49181, 6)
+# Liiku eteenpain 
+focar.eteenpain(63000, 3)
 
-# Käänny vasemmalle
-focar.vasemmalle()
+# Käänny oikealle
+focar.oikealle()
 
-focar.eteenpain()
+# Liiku eteenpäin
+focar.eteenpain(63000, 3)
 
-# Aja taaksepäin
-focar.taaksepain(49181,2)
+# Käänny oikealle
+focar.oikealle()
 
-# Käänny vasemmalle
-focar.vasemmalle()
+# Liiku eteenpäin
+focar.eteenpain(63000, 2.5)
 
-# Aja eteenpäin metri
-focar.eteenpain(49181, 6)
+# Käänny oikealle
+focar.oikealle()
+
+# Liiku eteenpäin
+focar.eteenpain(63000, 3)
+
+# Käänny oikealle
+focar.oikealle()
+
+
 
